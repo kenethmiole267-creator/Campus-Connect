@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Campus Connect — LPU-C</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">CC</div>
+        <div class="brand-text">
+          <h1 class="site-title">Campus Connect</h1>
+          <p class="site-sub">Lyceum of the Philippines - Cavite</p>
+        </div>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <nav id="navLinks" class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#announcements">Announcements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h2>Campus Connect</h2>
+            <p class="lead">Your one-stop hub for LPU-Cavite events, clubs, and announcements.</p>
+            <p><a class="btn btn-primary" href="#events">See Events</a></p>
+        </div>
+          <div class="hero-card">
+            <div id="announceBanner" class="announce-banner" aria-live="polite">
+              Welcome to Campus Connect — stay updated with LPU-C events!
+            </div>
+            <h3 class="tiny">Featured</h3>
+            <div id="featured" class="cards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <h2>All Events</h2>
+        <div class="controls">
+          <input id="search" class="search" placeholder="Search events (title or description)" aria-label="Search events" />
+        </div>
+        <div id="eventsList" class="cards" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="clubs" class="section">
+      <div class="container">
+        <h2>Clubs & Organizations</h2>
+        <div id="clubsList" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="announcements" class="section">
+      <div class="container">
+        <h2>Announcements</h2>
+        <ul id="annList" class="simple-list" aria-live="polite"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <strong>Lyceum of the Philippines - Cavite (LPU-C)</strong> · Campus Connect</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
